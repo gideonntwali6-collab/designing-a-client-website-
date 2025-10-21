@@ -3,112 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KDA School Website</title>
+  <title>King David Academy</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f2f2f2;
+      background-color: #f5f5f5;
     }
+
     header {
-      background-color: #004aad;
+      background-color: #003366;
       color: white;
+      padding: 15px 0;
       text-align: center;
-      padding: 20px;
     }
+
     nav {
-      background-color: #003580;
-      padding: 10px;
-      text-align: center;
+      background-color: #00509e;
+      display: flex;
+      justify-content: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin: 15px;
-      font-weight: bold;
+      padding: 14px 20px;
+      display: block;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      background-color: #003f7f;
     }
-    main {
-      padding: 20px;
-    }
-    .image-section {
+
+    .banner {
       text-align: center;
-      margin-bottom: 30px;
-    }
-    .image-section img {
-      width: 80%;
-      max-width: 600px;
-      border-radius: 10px;
-    }
-    section {
       background-color: white;
       padding: 20px;
+    }
+
+    .banner img {
+      width: 80%;
+      max-height: 400px;
+      object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 20px;
+    }
+
+    section {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      width: 85%;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #004aad;
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
     }
+
+    .achievement, .news, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .card {
+      background-color: #eef4fb;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
     footer {
-      background-color: #003580;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 10px 0;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>KIGALI DIGITAL ACADEMY (KDA)</h1>
-    <p>Empowering Students Through Innovation and Technology</p>
+    <h1>King David Academy</h1>
+    <p>Excellence • Discipline • Integrity</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#achievements">Achievements</a>
     <a href="#gallery">Gallery</a>
+    <a href="#news">News</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <main>
+  <div class="banner">
+    <img src="school.jpg" alt="School Image">
+    <p><i>Welcome to King David Academy — Nurturing the leaders of tomorrow.</i></p>
+  </div>
 
-    <section class="image-section" id="gallery">
-      <h2>School Gallery</h2>
-      <p>Here you can add photos of school events, students, and activities.</p>
-      <img src="school-photo.jpg" alt="KDA School Photo (Replace this with your image)">
-    </section>
+  <section id="about">
+    <h2>About Our School</h2>
+    <p>King David Academy is a leading educational institution dedicated to academic excellence, discipline, and character development. Our goal is to empower students to achieve their full potential and become responsible citizens of the future.</p>
+  </section>
 
-    <section id="about">
-      <h2>About Our School</h2>
-      <p>Kigali Digital Academy (KDA) is dedicated to providing quality education focused on digital innovation, leadership, and excellence. We aim to nurture students who are ready to shape the future of technology and business.</p>
-    </section>
+  <section id="achievements">
+    <h2>Student Achievements</h2>
+    <div class="achievement">
+      <div class="card">
+        <img src="student1.jpg" alt="Student Achievement">
+        <h3>Top Science Student 2025</h3>
+        <p>Jane Uwase won 1st place in the National Science Competition.</p>
+      </div>
+      <div class="card">
+        <img src="student2.jpg" alt="Student Achievement">
+        <h3>Football Champions</h3>
+        <p>Our school football team won the District Championship 2025.</p>
+      </div>
+      <div class="card">
+        <img src="student3.jpg" alt="Student Achievement">
+        <h3>Art & Innovation Award</h3>
+        <p>Students designed an eco-friendly robot using recycled materials.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="achievements">
-      <h2>Our Achievements</h2>
-      <ul>
-        <li>🏆 Winner of the National ICT Innovation Competition 2024</li>
-        <li>🎓 98% of graduates pass national exams</li>
-        <li>🤝 Partnerships with local tech companies</li>
-        <li>🌍 Participation in international student exchange programs</li>
-      </ul>
-    </section>
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Gallery Image">
+      <img src="photo2.jpg" alt="Gallery Image">
+      <img src="photo3.jpg" alt="Gallery Image">
+      <img src="photo4.jpg" alt="Gallery Image">
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p><b>Address:</b> Kigali, Rwanda</p>
-      <p><b>Email:</b> info@kda-school.rw</p>
-      <p><b>Phone:</b> +250 788 123 456</p>
-    </section>
+  <section id="news">
+    <h2>News & Updates</h2>
+    <div class="news">
+      <div class="card">
+        <h3>Upcoming Science Fair</h3>
+        <p>The Annual Science Fair will be held on November 10, 2025. All students are encouraged to participate.</p>
+      </div>
+      <div class="card">
+        <h3>New Computer Lab</h3>
+        <p>Our new ICT lab is now open with 50 modern computers and high-speed internet access.</p>
+      </div>
+      <div class="card">
+        <h3>Parent-Teacher Meeting</h3>
+        <p>The next parent-teacher meeting will take place on October 25, 2025.</p>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@kingdavidacademy.rw</p>
+    <p>Phone: +250 788 000 000</p>
+    <p>Location: Kigali, Rwanda</p>
+  </section>
 
   <footer>
-    <p>© 2025 Kigali Digital Academy | All Rights Reserved</p>
+    <p>&copy; 2025 King David Academy | All Rights Reserved</p>
   </footer>
 
 </body>
